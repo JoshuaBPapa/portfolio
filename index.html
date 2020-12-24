@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joshua Papa - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="section">
+    <div class="container landing">
+      <div class="intro">
+        <h1>Joshua Papa</h1>
+        <h2>Front End Developer</h2>
+      </div>
+      <div class="links-container">
+        <a href="https://github.com/JoshuaBPapa" target="_blank">
+          GitHub
+        </a>
+        <a href="mailto:joshua.b.papa@gmail.com" target="_blank">
+          joshua.b.papa@gmail.com
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container projects">
+      <div class="project">
+        <div class="project-desc-with-thumbnail">
+          <img src="assets/projects/bug-tracker-thumbnail.png" alt="bug tracker" class="project-thumbnail">
+          <div class="project-desc">
+            <a href="https://joshuapapa.com/bug-tracker" target="_blank" class="project-title">
+              Bug Tracker
+            </a>
+            <p>
+              A web app built to keep a track of bugs in projects by creating tickets. A user can create a team and add other users to it. 
+              These created users can then be assigned to tickets with different levels of priority and progress.            
+            </p>
+            <h3>
+              Technology
+            </h3>
+            <p>
+              React was used to create the frontend due to multiple components being reused. A custom hook, useAxios, was also created 
+              to handle API requests and JWTs. The REST API was built using Node/Express and MySQL. The API is hosted on Heroku and 
+              the database on Amazon RDS.
+            </p>
+          </div>
+        </div>
+        <div class="technologies-used">
+          <img src="assets/icons/react.png" alt="react">
+          <img src="assets/icons/node.png" alt="node">
+          <img src="assets/icons/express.png" alt="express">
+          <img src="assets/icons/mysql.png" alt="mysql">
+          <img src="assets/icons/heroku.png" alt="heroku">
+          <img src="assets/icons/amazon-rds.png" alt="amazon rds">
+        </div>
+        <div class="links-container">
+          <a href="https://joshuapapa.com/bug-tracker" target="_blank">
+            Demo
+          </a>
+          <a href="https://github.com/JoshuaBPapa/bug-tracker" target="_blank">
+            Code
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

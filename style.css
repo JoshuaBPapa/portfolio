@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-attachment: fixed;
+  background-color: #E85849;
+  background-image: url("assets/background.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: normal;
+  margin: 0.75em 0 0.125em;
+}
+
+p {
+  font-size: 0.875rem;
+}
+
+.section {
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.section:last-of-type {
+  margin-bottom: 5em;
+}
+
+.container {
+  background-color: #FDFDFD;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px 0px rgb(11, 11, 11, 0.25);
+  margin: auto;
+  max-width: 65em;
+  padding: 4.5%;
+  width: 95%;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.links-container a {
+  background-color: #e95949;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.875rem;
+  margin-right: 0.5em;
+  padding: 0.5em;
+  transition: box-shadow 0.2s linear;
+}
+
+.links-container a:last-of-type {
+  margin: 0;
+}
+
+.links-container a:hover {
+  box-shadow: 0px 0px 1px 7px rgba(233, 89, 73, 0.25);
+}
+
+.landing {
+  text-align: center;
+}
+
+.intro {
+  margin-bottom: 1em;
+}
+
+.project-thumbnail {
+  display: block;
+  margin: 1em auto;
+  margin-top: 0;
+  max-width: 400px;
+  width: 100%;
+}
+
+.project-title { 
+  color: #e95949;
+  display: inline-block;
+  font-size: 1.75rem;
+  margin-bottom: 0.25em;
+}
+
+.project-title:hover {
+  text-decoration: underline;
+}
+
+.technologies-used {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin: 1em auto;
+  max-width: 1000px;
+}
+
+.technologies-used img {
+  margin: 1em;
+  max-width: 100px;
+  width: 30vw;
+}
+
+.project .links-container a {
+  padding: 0.5em 3em;
+}
+
+@media (min-width: 724px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 3%;
+  }
+
+  .links-container a {
+    font-size: 1rem;
+    margin-right: 1em;
+  }  
+}
+
+@media (min-width: 1024px) {
+  .project-desc-with-thumbnail {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+  }
+
+  .project-thumbnail {
+    margin: 0;
+    width: 50%;
+  }
+  
+  .project-desc {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 25em;
+    width: 50%;
+  }
+}
