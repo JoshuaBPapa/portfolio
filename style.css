@@ -1,0 +1,162 @@
+:root {
+  --primary-color: #e85849;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background-attachment: fixed;
+  background-color: var(--primary-color);
+  background-image: url("assets/background.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "DM Sans", sans-serif;
+  min-height: 100vh;
+}
+
+section {
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: #fdfdfd;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.33);
+  margin: auto;
+  max-width: 70rem;
+  padding: 2.5rem;
+  width: 95%;
+}
+
+.link-buttons-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.link-button {
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  color: white;
+  display: inline-flex;
+  font-size: 1.125rem;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  transition: box-shadow 0.2s linear;
+}
+
+.link-button:hover {
+  box-shadow: 0px 0px 1px 7px rgba(233, 89, 73, 0.33);
+}
+
+.link-button .link-icon {
+  margin-right: 0.5rem;
+  width: 1.25rem;
+}
+
+/*
+=================
+-- TITLE CARD
+=================
+*/
+
+.card.title-card {
+  text-align: center;
+}
+
+.card.title-card .title-card-name,
+.card.title-card .title-card-job-title {
+  font-weight: normal;
+}
+
+.card.title-card .title-card-name {
+  font-size: 4.25rem;
+  line-height: 3.75rem;
+}
+
+.card.title-card .title-card-job-title {
+  font-size: 2.25rem;
+  margin-bottom: 2.25rem;
+  margin-top: 0.5rem;
+  line-height: 2.5rem;
+}
+
+/*
+=================
+-- PROJECT CARD
+=================
+*/
+
+.project-card .project {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.project-card .project .project-information .project-information-title {
+  color: var(--primary-color);
+  font-size: 1.75rem;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+
+.project-card .project .project-information .link-buttons-container {
+  margin-top: 1rem;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.project-card .project .project-image {
+  max-width: 100%;
+  width: 400px;
+}
+
+.project-card .project-technologies {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 2rem;
+}
+
+@media (min-width: 768px) {
+  /*
+  =================
+  -- PROJECT CARD TABLET SIZE AND UPWARDS
+  =================
+  */
+
+  .project-card .project {
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  .project-card .project .project-information .link-buttons-container {
+    margin-top: 1.5rem;
+    width: auto;
+  }
+
+  .project-card .project .project-image {
+    max-width: 50%;
+  }
+}
